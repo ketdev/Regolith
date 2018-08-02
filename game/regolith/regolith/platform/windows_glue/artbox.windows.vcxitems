@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{3beefb87-dc98-4b31-8443-85cbba9c0def}</ItemsProjectGuid>
+    <ItemsProjectName>artbox.windows</ItemsProjectName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)platform\entry.windows.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)glue\libs.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)graphics\screen.windows.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)platform\application.windows.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)platform\log.windows.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)glue\native.windows.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)glue\pch.h" />
+  </ItemGroup>
+</Project>

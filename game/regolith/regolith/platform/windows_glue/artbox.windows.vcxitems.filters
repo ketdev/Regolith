@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)glue\libs.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)platform\log.windows.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)graphics\screen.windows.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)platform\application.windows.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)platform\entry.windows.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)glue\pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)glue\native.windows.h" />
+  </ItemGroup>
+</Project>
